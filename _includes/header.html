@@ -32,12 +32,6 @@
         <a href="{{ item.url  | prepend: site.baseurl }}" class="header__link">{{ item.title }}</a>
       </li>
       {% endfor %}
-      <li class="header__item">
-        <a href="https://manage.siteleaf.com/signup" class="header__link header__link--button">Sign up</a>
-      </li>
-      <li class="header__item header__item--mobile">
-        <a id="mobileNavOpen" class="header__link">Menu</a>
-      </li>
     </ul>
     <a href="{{'/'  | prepend: site.baseurl }}" class="header__home"><img src="{{ site.logo  | prepend: site.baseurl }}" class="header__logo" alt="{{ site.title  | prepend: site.baseurl }}" /></a>
     <h1 class="header__title">{{ page.header_title | default: page.title }}</h1>
